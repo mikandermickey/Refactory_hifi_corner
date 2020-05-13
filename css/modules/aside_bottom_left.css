@@ -1,0 +1,25 @@
+.shop_aside_left_bottom__header{
+    color: #A39161;
+    font-size: 16px;
+    margin: 8%;
+}
+.shop_aside_left_bottom__filter{
+    margin: 8%;
+    font-weight: bold;
+    font-size: 14px;
+}
+.shop_aside_left_bottom__price{
+    margin: 8%;
+}
+.shop_aside_left_bottom__price_range{
+    margin: 2% 8%;
+    cursor: pointer;
+    color: #A39161;
+    font-size: 12px;
+}
+.shop_aside_left_bottom__manufacturers{
+    margin: 2% 8%;
+    cursor: pointer;
+    color: #A39161;
+    font-size: 12px;
+}

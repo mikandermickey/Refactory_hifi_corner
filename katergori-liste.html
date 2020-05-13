@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>HIFI-Kategori-liste</title>
+</head>
+
+<body>
+    
+     <header class="head">
+        <div class="head_left">
+            <div class="head-logo">
+                <img class="head-logo_img" src="./images/hi_fi_logo.png" alt="">
+            </div>
+        </div>
+
+        <div class="head_right">
+            <div class="head_searchbox">
+                <input class="head_searchbox_input" type="text" id="search-input"
+                    placeholder="Search entire store here">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="head_konto">
+                <i class="fas fa-user"> ACCOUNT</i>
+            </div>
+            <div class="head-cart">
+                <i class="fas fa-cart-plus"> CART</i>
+            </div>
+
+            <div class="head-menu">
+                <div class="head-menu__icons">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-phone-alt"></i>
+                    <i class="far fa-envelope"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <ul class="navigation__linkbox">
+            <li class="linkbox__link"> <a class="linkbox__link_a" href="/index.html">HOME</a> </li>
+            <li class="linkbox__link"> <a class="linkbox__link_a" href="#">ABOUT US</a> </li>
+            <li class="linkbox__link"> <a class="linkbox__link_a" href="/brands.html">BRANDS</a> </li>
+            <li class="linkbox__link"> <a class="linkbox__link_a" href="#">BLOG</a> </li>
+            <li class="linkbox__link"> <a class="linkbox__link_a" href="#">EVENTS</a> </li>
+            <li class="linkbox__link"> <a class="linkbox__link_a active" href="/shop.html">SHOP</a> </li>
+            <li class="linkbox__link"> <a class="linkbox__link_a" href="#">CONTACT US</a> </li>
+        </ul>
+    </nav>
+    <div class="wrapper_kategori">
+        <section class="sortby__menu">
+            <h1 class="sortby__overskrift">AMPLIFIERS</h1>
+            <div class="sortby__box">
+                <form class="sortby__venstre">
+                    <p>
+                        <label class="sortby__label-venstre">SORT BY:</label>
+                        <select class="myList" id="sort">
+                            <!---<option value=""></option>--->
+                            <option value="price">Price</option>
+                            <option value="newest">Newest</option>
+                            <option value="brand">Brand</option>
+                        </select>
+                        <i class="sortby__arrow fa fa-arrow-up" aria-hidden="true"></i>
+                    </p>
+                </form>
+                <div class="sortby__icons">
+                    <p>VIEW AS:
+                        <i class="sortby__icons-1 fa fa-th-large" aria-hidden="true"></i>
+                        <i class="sortby__icons-2 fa fa-bars" aria-hidden="true"></i>
+                    </p>
+                </div>
+                <form class="sortby__hoejre">
+                    <p>
+                        <label class="sortby__label-hoejre">133 Item(s) SHOW:</label>
+                        <select class="myList">
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                        </select>
+                    </p>
+                </form>
+            </div>
+        </section>
+
+        <div class="breadcrumbs">
+            <a class="breadcrumbs__home">Home</a>
+            <p class="breadcrumbs__seperator">/</p>
+            <a class="breadcrumbs__current_category">Amplifiers</a>
+        </div>
+
+        </section>
+
+
+        <aside class="shop_aside_left_top">
+            <p class="shop_link" >   <a href="" id="amp" >Amplifiers</a> </p>
+            <p class="shop_link" > <a href="" id="speak"> Speakers</a></p>
+            <p class="shop_link" > <a href="" id="turn">Turntables</a></p>
+            <p class="shop_link" > <a href="" id="cd">CD Players</a></p>
+            <p class="shop_link">Streamers</p>
+            <p class="shop_link">Cables</p>
+            <p class="shop_link">Furniture</p>
+            <p class="shop_link">Headphones</p>
+            <p class="shop_link">Home Cinema</p>
+            <p class="shop_link">Ceilling Speakers</p>
+            <p class="shop_link">TV</p>
+            <p class="shop_link">Vinyl</p>
+            <p class="shop_link"> Outlet-Save</p>
+        </aside>
+
+        <aside class="shop_aside_left_bottom">
+            <p class="shop_aside_left_bottom__header">SHOP BY</p>
+            <p class="shop_aside_left_bottom__filter">Filter</p>
+            <p class="shop_aside_left_bottom__filter">PRICE</p>
+
+            <p class="shop_aside_left_bottom__price_range">£0.00 - £.99  </p>
+            <p class="shop_aside_left_bottom__price_range">£800.00 -£.99</p>
+            <p class="shop_aside_left_bottom__price_range">£1,000.00 - £1,499.99 <a class="price_range__hits"> (1)</a>
+            </p>
+            <p class="shop_aside_left_bottom__price_range">£1,500.00 - £1,999.99 <a class="price_range__hits"> (1)</a>
+            </p>
+            <p class="shop_aside_left_bottom__price_range">£2,000.00 - £2,999.99 <a class="price_range__hits"> (1)</a>
+            </p>
+            <p class="shop_aside_left_bottom__price_range">£3,000.00 - £3,499.99 <a class="price_range__hits"> (1)</a>
+            </p>
+            <p class="shop_aside_left_bottom__price_range">£3,500.00 - £4,999.99 <a class="price_range__hits"> (1)</a> </p>
+            <p class="shop_aside_left_bottom__price_range">£5,000.00 - £7,999.99 <a class="price_range__hits"> (1)</a></p>
+            <p class="shop_aside_left_bottom__price_range">£8,000.00 - £11,999.99 <a class="price_range__hits">   (1)</a></p>
+            <p class="shop_aside_left_bottom__price_range">£12,000.00 and above <a class="price_range__hits">  (1)</a></p>
+
+            <a class="shop_aside_left_bottom__price_range price_1">£0.00 - £799.99</a><br>
+            <a class="shop_aside_left_bottom__price_range price_2">£800.00 - £999.99</a><br>
+            <a class="shop_aside_left_bottom__price_range price_3">£1,000.00 - £1,499.99</a>
+            <a class="shop_aside_left_bottom__price_range price_4">£1,500.00 - £1,999.99</a>
+            <a class="shop_aside_left_bottom__price_range price_5">£2,000.00 - £2,999.99</a>
+            <a class="shop_aside_left_bottom__price_range price_6">£3,000.00 - £3,499.99</a>
+            <a class="shop_aside_left_bottom__price_range price_7">£3,500.00 - £4,999.99</a>
+            <a class="shop_aside_left_bottom__price_range price_8">£5,000.00 - £7,999.99</a>
+            <a class="shop_aside_left_bottom__price_range price_9">£8,000.00 - £11,999.99</a>
+            <a class="shop_aside_left_bottom__price_range price_10">£12,000.00 and above</a>
+
+
+            <p class="shop_aside_left_bottom__filter">MANUFACTURER</p>
+
+            <p class="shop_aside_left_bottom__manufacturers">Arcam<a class="price_range__hits"> (1)</a></p>
+            <p class="shop_aside_left_bottom__manufacturers">Astell and Kern<a class="price_range__hits"> (1)</a></p>
+            <p class="shop_aside_left_bottom__manufacturers">ATC<a class="price_range__hits"> (1)</a>
+            </p>
+            <p class="shop_aside_left_bottom__manufacturers">Audiolab<a class="price_range__hits"> (1)</a>
+            </p>
+            <p class="shop_aside_left_bottom__manufacturers">AVID<a class="price_range__hits"> (1)</a>
+            </p>
+            <p class="shop_aside_left_bottom__manufacturers">Chord Electronics<a class="price_range__hits"> (1)</a>
+            </p>
+            <p class="shop_aside_left_bottom__manufacturers">Class<a class="price_range__hits"> (1)</a>
+            </p>
+            <p class="shop_aside_left_bottom__manufacturers">Denon<a class="price_range__hits"></a>
+                (1)</a></p>
+            <p class="shop_aside_left_bottom__manufacturers">Devialet<a class="price_range__hits">
+                    (1)</a></p>
+            <p class="shop_aside_left_bottom__manufacturers">EAT<a class="price_range__hits">
+                    (1)</a></p>
+            <p class="shop_aside_left_bottom__manufacturers">Graham Slee<a class="price_range__hits"> (1)</a></p>
+            <p class="shop_aside_left_bottom__manufacturers">Linn<a class="price_range__hits"> (1)</a></p>
+            <p class="shop_aside_left_bottom__manufacturers">Marantz<a class="price_range__hits"> (1)</a>
+            </p>
+            <p class="shop_aside_left_bottom__manufacturers">Meridian<a class="price_range__hits"> (1)</a>
+            </p>
+            <p class="shop_aside_left_bottom__manufacturers">Naim<a class="price_range__hits"> (1)</a>
+            </p>
+            <p class="shop_aside_left_bottom__manufacturers">PrimaLuna<a class="price_range__hits"> (1)</a>
+            </p>
+            <p class="shop_aside_left_bottom__manufacturers">Primare<a class="price_range__hits"> (1)</a>
+            </p>
+            <p class="shop_aside_left_bottom__manufacturers">Quad<a class="price_range__hits"></a>
+                (1)</a></p>
+            <p class="shop_aside_left_bottom__manufacturers">Rotel<a class="price_range__hits">
+                    (1)</a></p>
+            <p class="shop_aside_left_bottom__manufacturers">Sennheiser<a class="price_range__hits">
+                    (1)</a></p>
+            <p class="shop_aside_left_bottom__manufacturers">Sugden<a class="price_range__hits"> (1)</a>
+            </p>
+            <p class="shop_aside_left_bottom__manufacturers">Technics<a class="price_range__hits"></a>
+                (1)</a></p>
+            <p class="shop_aside_left_bottom__manufacturers">Trinnov<a class="price_range__hits">
+                    (1)</a></p>
+            <p class="shop_aside_left_bottom__manufacturers">Yamaha<a class="price_range__hits">
+                    (1)</a></p>
+
+        </aside>
+        <aside class="shop_aside_right">
+            <p class="shop_aside_right__manufacturer"> MANUFACTURER
+            </p>
+            <p class="shop_aside_right__brands">ARCAM</p>
+            <p class="shop_aside_right__brands">ASTELL AND KERN</p>
+            <p class="shop_aside_right__brands">ATC</p>
+            <p class="shop_aside_right__brands">AUDIOLAB</p>
+            <p class="shop_aside_right__brands">AVID</p>
+            <p class="shop_aside_right__brands">CHORD ELECTRONICS</p>
+            <p class="shop_aside_right__brands">CLASS</p>
+            <p class="shop_aside_right__viewAll">View All</p>
+        </aside>
+
+        <main class="thumbnail-grid">
+
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__venstre">
+            <div class="venstre__tekst">
+                <p class="tekst__p">HI-FI Corner</p>
+                <p class="tekst__p">Edinburgh 2 joppa Road EH 15 2EU
+                </p>
+                <p class="tekst__p">Falkirk 44 Cow Wynd FK1 1PU</p>
+            </div>
+            <div class="venstre__links">
+                <a class="links__refund" href="#">Return & Refunds</a>
+                <a class="links__refund" href="#">| Privacy Policy</a>
+            </div>
+        </div>
+        <div class="footer__hojre">
+            <img class="hojre__betaling" src="images/footer/betalings-muligheder.png" alt="">
+
+            <div class="circle">
+                <i class="fab fa-facebook-f social__link"></i>
+            </div>
+            <div class="circle">
+                <i class="fab fa-youtube social__link"></i>
+            </div>
+            <div class="circle">
+                <i class="fab fa-twitter social__link"></i>
+            </div>
+            <div class="circle">
+                <i class="fab fa-instagram social__link"></i>
+            </div>
+
+        </div>
+    </footer>
+   <script src="/script/products-filter.js"></script>
+    <script src="/script/search.js"></script>
+    <script src="script/thumbnails.js"></script>
+
+    <script src="script/filter.js"></script>  
+
+   
+</body>
+
+</html>

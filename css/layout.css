@@ -1,0 +1,41 @@
+.hero{
+    width: 100%;
+    display: grid;
+}
+.brands_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.double_article_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+    border: 20px solid white;
+    margin: 0 10%;
+}
+.wrapper_kategori{
+    display: grid;
+    grid-template-columns: 250px 855px 250px;
+    background-color: white;
+    justify-content: center;
+}
+.shop_aside_left_top{
+    width: 220px;
+    background-color: #E1E1E1;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin-top: 120px;
+    margin-left: 25px;
+    font-size: 14px;
+}
+.shop_aside_left_bottom{
+    width: 220px;
+    background-color: #E1E1E1;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-left: 25px;
+    margin-top: 15px;
+    padding-bottom: 8px;
+}
+

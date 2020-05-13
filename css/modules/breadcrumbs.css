@@ -1,0 +1,21 @@
+.breadcrumbs{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    place-self: center start;
+    margin-bottom: 6em;
+    font-size: 14px;
+    margin-left: 3em;
+}
+.breadcrumbs__seperator{
+     margin: 0;
+     margin-right: 1em;
+     margin-left: 1em;
+}
+.breadcrumbs__home{
+    color: #A39161;
+    cursor: pointer;
+}
+.breadcrumbs__current_category{
+    cursor: pointer;
+}
