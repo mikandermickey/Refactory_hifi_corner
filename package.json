@@ -1,0 +1,27 @@
+{
+  "name": "Refactory_hifi_corner",
+  "version": "1.0.0",
+  "description": "## Om opgaven Denne opgave omhandler opsætning, navigation og hentning af data. Læs hele opgavebeskrivelsen grundigt igennem inden I stiller spørgsmål.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikandermickey/Refactory_hifi_corner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikandermickey/Refactory_hifi_corner/issues"
+  },
+  "homepage": "https://github.com/mikandermickey/Refactory_hifi_corner#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "gulp-rename": "^2.0.0"
+  },
+  "dependencies": {}
+}
