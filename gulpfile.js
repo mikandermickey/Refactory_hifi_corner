@@ -6,9 +6,9 @@ const ejs = require("gulp-ejs");
 
 function html() {
     return gulp
-        .src("./src/html/*.ejs")
+        .src("./src/html/templates/*.ejs")
         .pipe(ejs())
-        .pipe(rename(function () {
+        .pipe(rename(function (path) {
             path.extname = ".html"
         }))
         .pipe(gulp.dest("./tmp"))
@@ -24,7 +24,7 @@ function watchHTML() {
     //2 object - indstillinger for hvordan den skal fungere
     //3 hvilken function skal køre
 
-    return gulp.watch("./src/html/*.ejs", {
+    return gulp.watch("./src/html/**/*.ejs", {
         ignoreInitial: false
     }, html);
 }

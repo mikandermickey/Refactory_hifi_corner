@@ -1,0 +1,65 @@
+<%- include("../partials/before-header.ejs") %>
+<%- include("../partials/header.ejs") %>
+<%- include("../partials/navigation.ejs") %>
+
+<main>
+    <section class="hero">
+        <img class="hero__top_image" src='/images/background_forside.jpg' alt='Hero image with logo'>
+        <img class="hero__logo" src="/images/hi_fi_logo.png">
+        <img class="hero__bottom_image" src='/images/message_background.jpg' alt='Image with info'>
+        <h1 class="hero__image_text">OUR EDINBURGH SHOWROOM HAS NOW MOVED<br>TO STUNNING NEW PREMISES ON JOPPA ROAD
+        </h1>
+    </section>
+
+    <section class="body__slider">
+        <p id="slider__text_name">PRIMULUNA SOUNDS</p>
+        <i class="pile fas fa-chevron-left" id="back"></i>
+        <img id="big_img" src="/images/slider/amplifier.jpg" alt="slider" height="665">
+        <i class="pile fas fa-chevron-right" id="next"></i>
+    </section>
+
+    <section class="section">
+        <div class="social-cards">
+            <div class="social-cards__box1">
+                <a href="www.facebook.com"><i class="fab fa-facebook social-cards__icons"></i></a>
+            </div>
+            <div class="social-cards__box2">
+                <a href="www.blogger.com"><i class="fab fa-blogger  social-cards__icons"></i></a>
+            </div>
+            <div class="social-cards__box3">
+                <a href="www.twitter.com"><i
+                        class="fab fa-twitter social-cards__icons social-cards__icons_modified "></i></a>
+            </div>
+        </div>
+
+        <article class="textsContainer">
+            <div class="textsContainer__blok">
+                <div class="textsContainer__blok-items">
+                    <h3 class="textsContainer__blok-items-title1">HISTORY</h3>
+                    <p class="textsContainer__blok-items-paragraph">
+                        ESTABLISHED IN THE LATE 1960S, OUR FAMILY OWNED BUSINESS IS BASED
+                        IN EDINBURGH AND FALKIRK, SERVICING CUSTOMERS ACROSS THE UK.
+                    </p>
+                </div>
+
+                <div class="textsContainer__blok-items">
+                    <h3 class="textsContainer__blok-items-title">NEWS</h3>
+                    <p class="textsContainer__blok-items-paragraph">
+                        CHECK OUT OUR LATEST NEWS STORIES FOR ALL THE UP TO DATE HI-FI CORNER
+                        PRODUCTS AND LAUNCHES
+                    </p>
+                </div>
+
+                <div class="textsContainer__blok-items">
+                    <h3 class="textsContainer__blok-items-title">SHOP</h3>
+                    <p class="textsContainer__blok-items-paragraph">
+                        HAVE A LOOK IN OUR ONLINE SHOP FOR GREAT PRODUCTS AND DEALS.
+                    </p>
+                </div>
+
+            </div>
+        </article>
+    </section>
+</main>
+<%- include("../partials/footer.ejs") %>
+<%- include("../partials/after-footer.ejs") %>

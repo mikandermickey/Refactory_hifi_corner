@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>HIFI-Shop-Produkt</title>
+</head>
+
+<body>
+
+    <header class="head">
+
+        <div class="head_left">
+            <div class="head-logo">
+                <img class="head-logo_img" src="/images/hi_fi_logo.png" alt="">
+            </div>
+        </div>
+
+        <div class="head_right">
+            <div class="head_searchbox">
+                <input class="head_searchbox_input" type="text" placeholder="Search entire store here">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="head_konto">
+                <i class="fas fa-user"> ACCOUNT</i>
+            </div>
+            <div class="head-cart">
+                <i class="fas fa-cart-plus"> CART</i>
+            </div>
+
+            <div class="head-menu">
+                <div class="head-menu__icons">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-phone-alt"></i>
+                    <i class="far fa-envelope"></i>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <nav class="navigation">
+        <ul class="navigation__linkbox">
+            <li class="linkbox__link"> <a class="linkbox__link_a" href="/index.html">HOME</a> </li>
+            <li class="linkbox__link"> <a class="linkbox__link_a" href="#">ABOUT US</a> </li>
+            <li class="linkbox__link"> <a class="linkbox__link_a" href="/brands.html">BRANDS</a> </li>
+            <li class="linkbox__link"> <a class="linkbox__link_a" href="#">BLOG</a> </li>
+            <li class="linkbox__link"> <a class="linkbox__link_a" href="#">EVENTS</a> </li>
+            <li class="linkbox__link"> <a class="linkbox__link_a active" href="/shop.html">SHOP</a> </li>
+            <li class="linkbox__link"> <a class="linkbox__link_a" href="#">CONTACT US</a> </li>
+        </ul>
+    </nav>
+
+    <main class="wrapper-shop-produkt">
+
+        <div class="breadcrumbs breadcrumbs_less-margin">
+            <a class="breadcrumbs__home">Home</a>
+            <p class="breadcrumbs__seperator">/</p>
+            <a class="breadcrumbs__home">Amplifiers</a>
+            <p class="breadcrumbs__seperator">/</p>
+            <a class="breadcrumbs__current_category">Marantz PM6006 UK Edition</a>
+        </div>
+
+        <div class="hero-reklame"><img class="hero-reklame__billede" src="/images/banner reklame hifi.png" alt=""></div>
+
+        <!-- shop-produkt er mit grid -->
+        <article class="shop-produkt">
+
+            <section class="shop-produkt__billede">
+                <!-- <img src="/images/Produktbilleder/parasound_halop3.jpg" alt=""> -->
+            </section>
+
+            <section class="shop-produkt__thumbnail">
+                <h2 class="thumbnail__views">more views
+                </h2>
+                <!-- <img class="thumbnail__small-pictures"
+                    src="/images/Produktbilleder/parasound_classic7100.jpg" alt="">
+                <img class="thumbnail__small-pictures"
+                    src="/images/Produktbilleder/parasound_halop3.jpg" alt=""> -->
+            </section>
+
+            <section class="shop-produkt__specifikation">
+                <h2 class="specifikation__overskrift">
+                    description
+                </h2>
+                <table>
+                    <tr>
+                        <td>Power-Output:
+                        <td class="specifikation__td specifikation__power"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Frequency-Response:
+                        <td class="specifikation__td specifikation__frequency"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Total-Harmonic-Distortion:
+                        <td class="specifikation__td specifikation__total"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Damping-Factor:
+                        <td class="specifikation__td specifikation__damping"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Input-Sensitivity:MM:
+                        <td class="specifikation__td specifikation__inputMM"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Input-Sensitivity:MC:
+                        <td class="specifikation__td specifikation__inputMC"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Signal-to-Noise-Ratio: MM / MC:
+                        <td class="specifikation__td specifikation__signal"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Input-Sensitivity: High level:
+                        <td class="specifikation__td specifikation__input1"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Input-Sensitivity: Balanced High Level:
+                        <td class="specifikation__td specifikation__inputBalanced"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Signal-to-Noise-Ratio: High level:
+                        <td class="specifikation__td specifikation__signalHigh"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Input-Sensitivity: Power Amp Direct IN:
+                        <td class="specifikation__td specifikation__inputPower"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Signal-to-Noise-Ratio: Power Amp Direct IN:
+                        <td class="specifikation__td specifikation__signalPower"></td>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="shop-produkt__info">
+                <h2 class="info__overskrift"></h2>
+
+                <div class="info__otherProducts">
+                    <p class="info__otherProducts_navn">See other
+                        <span class="info__otherProducts_brand"></span>products</p>
+                    <p><span class="info__otherProducts_price"></span><span class="info__otherProducts_discount"></span>
+                    </p>
+                </div>
+
+                <p class="info__produktTekst">The PM6006 is an upgraded succesor of the multi-award-winning PM6005.
+                    Marantz retained the pre-amp and power-amp sections that exclusively feature discrete components -
+                    not a single IC in sight of the signal path. The PM6006 is upgraded for peak current at the
+                    amplifier stage, which makes it possible to refine the sound for you in much more detail.</p>
+
+                <div class="info__buttons-box">
+                    <p class="buttons-box__button">ask a question</p>
+                    <p class="buttons-box__button">part exchange</p>
+                    <p class="buttons-box__button">pay by finance</p>
+                    <p class="buttons-box__button">seen a better price?</p>
+                </div>
+            </section>
+
+            <section class="shop-produkt__farver">
+                <div class="farver__tekstBox">
+                    <p class="tekstBox__venstre">
+                        Finish <span class="tekstBox__venstre_rød">*</span>
+                    </p>
+                    <p class="tekstBox__højre">
+                        * Required Fields
+                    </p>
+                </div>
+                <div class="farver__vaelg">
+                    <input class="farver__vaelg_Knap" type="radio" name="farveValg" id="" value="">
+                    <label class="farver__vaelg_Knap" for="farveValg">Black</label>
+                </div>
+                <br>
+                <div class="farver__vaelg">
+                    <input class="farver__vaelg_Knap" type="radio" name="farveValg" id="" value="">
+                    <label class="farver__vaelg_Knap" for="farveValg">Silver</label>
+                </div>
+            </section>
+
+            <section class="shop-produkt__betaling">
+                <div class="betaling__box">
+                    <label class="betaling__box__qty" for="">Qty:</label>
+                    <input class="betaling__box__antal" type="tel">
+                    <p class="betaling__box__button">add to cart</p>
+                </div>
+                <p class="betaling__box__OR">-OR-</p>
+                <img class="betaling__box__checkout" src="/images/paypal-checkout.png" alt="">
+                <div class="betaling__box__bottomline"></div>
+            </section>
+
+            <section class="shop-produkt__additional">
+                <h2 class="additional__overskrift">additional information</h2>
+                <table class="additional__table">
+                    <tr>
+                        <td class="additional__info">manufacturer
+                        <td class="additional__tekst info__brand"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="additional__info">manufacturer link
+                        <td class="additional__tekst additional__tekst_aktiv info__link"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="additional__info">free warranty
+                        <td class="additional__tekst info__warranty"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="additional__info">delivery charge
+                        <td class="additional__tekst info__charge"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="additional__info">delivery time
+                        <td class="additional__tekst info__time"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="additional__info">card surcharges
+                        <td class="additional__tekst info__card"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                </table>
+            </section>
+        </article>
+
+
+        <p class="footer-kontakt"><i class="fas fa-phone-alt"> call us about this product</i></p>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__venstre">
+            <div class="venstre__tekst">
+                <p class="tekst__p">HI-FI Corner</p>
+                <p class="tekst__p">Edinburgh 2 joppa Road EH 15 2EU
+                </p>
+                <p class="tekst__p">Falkirk 44 Cow Wynd FK1 1PU</p>
+            </div>
+            <div class="venstre__links">
+                <a class="links__refund" href="#">Return & Refunds</a>
+            </div>
+        </div>
+        <div class="footer__hojre">
+            <img class="hojre__betaling" src="/images/footer/betalings-muligheder.png" alt="">
+
+            <div class="circle">
+                <i class="fab fa-facebook-f social__link"></i>
+            </div>
+            <div class="circle">
+                <i class="fab fa-youtube social__link"></i>
+            </div>
+            <div class="circle">
+                <i class="fab fa-twitter social__link"></i>
+            </div>
+            <div class="circle">
+                <i class="fab fa-instagram social__link"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script/shopProdukt-js.js"></script>
+</body>
+
+</html>
