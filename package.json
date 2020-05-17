@@ -4,7 +4,7 @@
   "description": "## Om opgaven Denne opgave omhandler opsætning, navigation og hentning af data. Læs hele opgavebeskrivelsen grundigt igennem inden I stiller spørgsmål.",
   "main": "index.js",
   "scripts": {
-    "dev": "gulp dev",
+    "dev": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

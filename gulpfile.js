@@ -1,42 +1,13 @@
-const gulp = require("gulp");
-const rename = require("gulp-rename");
 const connect = require("gulp-connect");
-const ejs = require("gulp-ejs");
+const { watchHTML } = require("./tasks/html");
 
-
-function html() {
-    return gulp
-        .src("./src/html/templates/*.ejs")
-        .pipe(ejs())
-        .pipe(rename(function (path) {
-            path.extname = ".html"
-        }))
-        .pipe(gulp.dest("./tmp"))
-        .pipe(connect.reload());
-
-}
-
-
-
-function watchHTML() {
-    //watch har 3 argumenter.
-    //1 string der beskriver mappen vi vil overvåge
-    //2 object - indstillinger for hvordan den skal fungere
-    //3 hvilken function skal køre
-
-    return gulp.watch("./src/html/**/*.ejs", {
-        ignoreInitial: false
-    }, html);
-}
-
-
-
-gulp.task("dev", function (done) {
-    // Noget her
+function dev() {
     watchHTML();
     connect.server({
         livereload: true,
+        port: 3000,
         root: "tmp"
     });
-    done();
-})
+}
+
+exports.default = dev;
