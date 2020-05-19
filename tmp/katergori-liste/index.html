@@ -5,21 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <link rel="stylesheet" href="/tmp/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>HIFI-Home</title>
 </head>
 
 <body>
-<header class="head-kontakt">
-    <div class="head-menu__icons">
-        <i class="fas fa-map-marker-alt"></i>
-        <i class="fas fa-phone-alt"></i>
-        <i class="far fa-envelope"></i>
+<header class="head">
+    <div class="head_left">
+        <div class="head-logo">
+            <img class="head-logo_img" src="./images/hi_fi_logo.png" alt="">
+        </div>
     </div>
-    <button class="head-menu__icons head-menu__icons_subscribebtn">
-        <i class="far fa-envelope"></i>Subscribe</button>
+
+    <div class="head_right">
+        <div class="head_searchbox">
+            <input class="head_searchbox_input" type="text" id="search-input" placeholder="Search entire store here">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <div class="head_konto">
+            <i class="fas fa-user"> ACCOUNT</i>
+        </div>
+        <div class="head-cart">
+            <i class="fas fa-cart-plus"> CART</i>
+        </div>
+
+        <div class="head-menu">
+            <div class="head-menu__icons">
+                <i class="fas fa-map-marker-alt"></i>
+                <i class="fas fa-phone-alt"></i>
+                <i class="far fa-envelope"></i>
+            </div>
+        </div>
+    </div>
 </header>
 <nav class="navigation">
     <ul class="navigation__linkbox">
@@ -97,25 +117,6 @@
         <p class="shop_aside_left_bottom__filter">Filter</p>
         <p class="shop_aside_left_bottom__filter">PRICE</p>
 
-        <p class="shop_aside_left_bottom__price_range">£0.00 - £.99 </p>
-        <p class="shop_aside_left_bottom__price_range">£800.00 -£.99</p>
-        <p class="shop_aside_left_bottom__price_range">£1,000.00 - £1,499.99 <a class="price_range__hits"> (1)</a>
-        </p>
-        <p class="shop_aside_left_bottom__price_range">£1,500.00 - £1,999.99 <a class="price_range__hits"> (1)</a>
-        </p>
-        <p class="shop_aside_left_bottom__price_range">£2,000.00 - £2,999.99 <a class="price_range__hits"> (1)</a>
-        </p>
-        <p class="shop_aside_left_bottom__price_range">£3,000.00 - £3,499.99 <a class="price_range__hits"> (1)</a>
-        </p>
-        <p class="shop_aside_left_bottom__price_range">£3,500.00 - £4,999.99 <a class="price_range__hits"> (1)</a>
-        </p>
-        <p class="shop_aside_left_bottom__price_range">£5,000.00 - £7,999.99 <a class="price_range__hits"> (1)</a>
-        </p>
-        <p class="shop_aside_left_bottom__price_range">£8,000.00 - £11,999.99 <a class="price_range__hits"> (1)</a>
-        </p>
-        <p class="shop_aside_left_bottom__price_range">£12,000.00 and above <a class="price_range__hits"> (1)</a>
-        </p>
-
         <a class="shop_aside_left_bottom__price_range price_1">£0.00 - £799.99</a><br>
         <a class="shop_aside_left_bottom__price_range price_2">£800.00 - £999.99</a><br>
         <a class="shop_aside_left_bottom__price_range price_3">£1,000.00 - £1,499.99</a>
@@ -126,7 +127,6 @@
         <a class="shop_aside_left_bottom__price_range price_8">£5,000.00 - £7,999.99</a>
         <a class="shop_aside_left_bottom__price_range price_9">£8,000.00 - £11,999.99</a>
         <a class="shop_aside_left_bottom__price_range price_10">£12,000.00 and above</a>
-
 
         <p class="shop_aside_left_bottom__filter">MANUFACTURER</p>
 
@@ -208,7 +208,7 @@
         </div>
     </div>
     <div class="footer__hojre">
-        <img class="hojre__betaling" src="/images/footer/betalings-muligheder.png" alt="">
+        <img class="hojre__betaling" src="/assets/images/footer/betalings-muligheder.png" alt="">
 
         <div class="circle">
             <i class="fab fa-facebook-f social__link"></i>
@@ -225,10 +225,11 @@
     </div>
 </footer>
 
-<script src="/script/products-filter.js"></script>
-<script src="/script/search.js"></script>
-<script src="script/thumbnails.js"></script>
-<script src="script/filter.js"></script>
+<!--<script src="/assets/js/products-filter.js"></script>
+<script src="/assets/js/search.js"></script>
+-->
+<script src="/assets/js/thumbnails.js"></script>
+<script src="/assets/js/filter.js"></script>
 
 </body>
 
