@@ -9,14 +9,12 @@ document.addEventListener('DOMContentLoaded', function () {
         "method": "GET"
     })
         .then(response => response.json())
-
         .then(data => {
-
             //henter alle amplifiers
             amplifier.addEventListener('click', function (event) {
                 event.preventDefault();
-                let results = data.products.filter(products => {
-                    return products.products.includes('amplifier')
+                let results = data.filter(products => {
+                    return products.category.includes("Amplifiers")
 
                 })
                 console.log(results)
@@ -26,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         element.style.display = 'none'
                     });
                     results.forEach(element => {
-                        let selected = document.getElementById('p' + element.id)
+                        let selected = document.getElementById('p' + element.sku)
                         selected.style.display = 'block'
                     });
                 }
@@ -35,8 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
             //henter alle speakers
             speakers.addEventListener('click', function (event) {
                 event.preventDefault();
-                let results = data.products.filter(products => {
-                    return products.product.includes('speakers')
+                let results = data.filter(products => {
+                    return products.category.includes('Speakers')
                 })
                 if (results) {
                     let allelm = document.querySelectorAll('.thumbnail')
@@ -44,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         element.style.display = 'none'
                     });
                     results.forEach(element => {
-                        let selected = document.getElementById('p' + element.id)
+                        let selected = document.getElementById('p' + element.sku)
                         selected.style.display = 'block'
                     });
                 }
@@ -53,8 +51,8 @@ document.addEventListener('DOMContentLoaded', function () {
             //henter alle turntables
             turntables.addEventListener('click', function (event) {
                 event.preventDefault();
-                let results = data.produkter.filter(produkt => {
-                    return produkt.product.includes('turntables')
+                let results = data.filter(products => {
+                    return products.category.includes('Turntables')
                 })
                 if (results) {
                     let allelm = document.querySelectorAll('.thumbnail')
@@ -62,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         element.style.display = 'none'
                     });
                     results.forEach(element => {
-                        let selected = document.getElementById('p' + element.id)
+                        let selected = document.getElementById('p' + element.sku)
                         selected.style.display = 'block'
                     });
                 }
@@ -71,8 +69,8 @@ document.addEventListener('DOMContentLoaded', function () {
             //henter alle cd players
             cd_players.addEventListener('click', function (event) {
                 event.preventDefault();
-                let results = data.produkter.filter(produkt => {
-                    return produkt.product.includes('CD Players')
+                let results = data.filter(products => {
+                    return products.category.includes('CD')
                 })
                 if (results) {
                     let allelm = document.querySelectorAll('.thumbnail')
@@ -80,17 +78,14 @@ document.addEventListener('DOMContentLoaded', function () {
                         element.style.display = 'none'
                     });
                     results.forEach(element => {
-                        let selected = document.getElementById('p' + element.id)
+                        let selected = document.getElementById('p' + element.sku)
                         selected.style.display = 'block'
                     });
                 }
             })
 
         })
-
-
-
-})
+});
 
 
 

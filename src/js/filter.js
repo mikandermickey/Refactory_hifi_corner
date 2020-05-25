@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log(data);
             price1.addEventListener("click", function (event) {
                 event.preventDefault();
+
                 let results = data.filter(products => {
                     return +products.price <= 799
                 });

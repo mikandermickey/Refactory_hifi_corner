@@ -2,7 +2,7 @@
 <header class="head">
     <div class="head_left">
         <div class="head-logo">
-            <img class="head-logo_img" src="./images/hi_fi_logo.png" alt="">
+            <img class="head-logo_img" src="/assets/images/hi_fi_logo.png" alt="">
         </div>
     </div>
 
@@ -38,7 +38,6 @@
                 <p>
                     <label class="sortby__label-venstre">SORT BY:</label>
                     <select class="myList" id="sort">
-                        <!---<option value=""></option>--->
                         <option value="price">Price</option>
                         <option value="newest">Newest</option>
                         <option value="brand">Brand</option>
@@ -72,7 +71,6 @@
 
     </section>
 
-
     <aside class="shop_aside_left_top">
         <p class="shop_link"> <a href="" id="amp">Amplifiers</a> </p>
         <p class="shop_link"> <a href="" id="speak"> Speakers</a></p>
@@ -94,16 +92,26 @@
         <p class="shop_aside_left_bottom__filter">Filter</p>
         <p class="shop_aside_left_bottom__filter">PRICE</p>
 
-        <a class="shop_aside_left_bottom__price_range price_1">£0.00 - £799.99</a><br>
-        <a class="shop_aside_left_bottom__price_range price_2">£800.00 - £999.99</a><br>
-        <a class="shop_aside_left_bottom__price_range price_3">£1,000.00 - £1,499.99</a>
-        <a class="shop_aside_left_bottom__price_range price_4">£1,500.00 - £1,999.99</a>
-        <a class="shop_aside_left_bottom__price_range price_5">£2,000.00 - £2,999.99</a>
-        <a class="shop_aside_left_bottom__price_range price_6">£3,000.00 - £3,499.99</a>
-        <a class="shop_aside_left_bottom__price_range price_7">£3,500.00 - £4,999.99</a>
-        <a class="shop_aside_left_bottom__price_range price_8">£5,000.00 - £7,999.99</a>
-        <a class="shop_aside_left_bottom__price_range price_9">£8,000.00 - £11,999.99</a>
-        <a class="shop_aside_left_bottom__price_range price_10">£12,000.00 and above</a>
+        <a class="shop_aside_left_bottom__price_range price_1" href="/brands" data-minprice="0.00"
+            data-maxprice="799.99">£0.00 - £799.99</a><br>
+        <a class="shop_aside_left_bottom__price_range price_2" href="/brands" data-minprice="800.00"
+            data-maxprice="999.99">£800.00 - £999.99</a><br>
+        <a class="shop_aside_left_bottom__price_range price_3" href="/brands" data-minprice="1000.00"
+            data-maxprice="1499.99">£1,000.00 - £1,499.99</a>
+        <a class="shop_aside_left_bottom__price_range price_4" href="/brands" data-minprice="1500.00"
+            data-maxprice="1999.99">£1,500.00 - £1,999.99</a>
+        <a class="shop_aside_left_bottom__price_range price_5" href="/brands" data-minprice="2000.00"
+            data-maxprice="2999.99">£2,000.00 - £2,999.99</a>
+        <a class="shop_aside_left_bottom__price_range price_6" href="/brands" data-minprice="3000.00"
+            data-maxprice="3499.99">£3,000.00 - £3,499.99</a>
+        <a class="shop_aside_left_bottom__price_range price_7" href="/brands" data-minprice="3500.00"
+            data-maxprice="4999.99">£3,500.00 - £4,999.99</a>
+        <a class="shop_aside_left_bottom__price_range price_8" href="/brands" data-minprice="5000.00"
+            data-maxprice="7999.99">£5,000.00 - £7,999.99</a>
+        <a class="shop_aside_left_bottom__price_range price_9" href="/brands" data-minprice="8000.00"
+            data-maxprice="11999.99">£8,000.00 - £11,999.99</a>
+        <a class="shop_aside_left_bottom__price_range price_10" href="/brands" data-minprice="12000.00"
+            data-maxprice="1000000">£12,000.00 and above</a>
 
         <p class="shop_aside_left_bottom__filter">MANUFACTURER</p>
 
@@ -173,10 +181,12 @@
 
 <%- include("../partials/footer.ejs") %>
 
-<!--<script src="/assets/js/products-filter.js"></script>
-<script src="/assets/js/search.js"></script>
+<script src="/assets/js/products-filter.js"></script>
+<!--<script src="/assets/js/search.js"></script>
 -->
 <script src="/assets/js/thumbnails.js"></script>
-<script src="/assets/js/filter.js"></script>
+<script src="/assets/js/price-filter.js"></script>
+
+
 
 <%- include("../partials/after-footer.ejs") %>
