@@ -21,6 +21,22 @@ function html() {
         .pipe(connect.reload());
 
 }
+function buildHTML() {
+    return gulp
+        .src("./src/html/templates/*.ejs")
+        .pipe(ejs())
+        .pipe(rename(function (path) {
+            if (path.basename != "index") {
+                path.dirname = path.basename;
+                path.basename = "index";
+                path.extname = ".html";
+            } else {
+                path.extname = ".html"
+            }
+        }))
+        .pipe(gulp.dest("./dist"));
+
+}
 
 
 
@@ -36,5 +52,6 @@ function watchHTML() {
 }
 
 module.exports = {
-    watchHTML
+    watchHTML,
+    buildHTML
 }

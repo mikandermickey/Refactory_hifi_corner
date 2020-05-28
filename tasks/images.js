@@ -10,6 +10,13 @@ function image() {
         .pipe(gulp.dest("tmp/assets/images"))
         .pipe(connect.reload());
 }
+function buildIMAGE() {
+    return gulp.src("src/images/**/*")
+        .pipe(imagemin([
+            imagemin.mozjpeg({ quality: 75, progressive: true }),
+        ]))
+        .pipe(gulp.dest("dist/assets/images"));
+}
 
 function watchIMAGES() {
     return gulp.watch("./src/images/**/*", {
@@ -18,6 +25,7 @@ function watchIMAGES() {
 }
 
 module.exports = {
-    watchIMAGES
+    watchIMAGES,
+    buildIMAGE
 }
 

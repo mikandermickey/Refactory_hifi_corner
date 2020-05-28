@@ -2,14 +2,16 @@ document.addEventListener('DOMContentLoaded', function () {
     let search = document.getElementById('search-input')
     let searchclick = document.querySelector('.fa-search')
 
-    fetch('../data/produkts.json')
+    fetch("https://hifi-corner.herokuapp.com/api/v1/products", {
+        "method": "GET"
+    })
         .then(response => response.json())
         .then(data => {
             //console.log(data);
             searchclick.addEventListener("click", function (event) {
 
-                let results = data.produkter.filter(produkt => {
-                    return produkt.title.toLowerCase().includes(search.value.toLowerCase())
+                let results = data.filter(produkt => {
+                    return produkt.make.toLowerCase().includes(search.value.toLowerCase())
                 });
 
                 if (results) {
@@ -20,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     });
                     results.forEach(element => {
                         //console.log(element.id)
-                        let selected = document.getElementById('p' + element.id)
+                        let selected = document.getElementById('p' + element.sku)
                         selected.style.display = 'block'
 
                     });

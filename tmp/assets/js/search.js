@@ -3,13 +3,15 @@
 document.addEventListener('DOMContentLoaded', function () {
   var search = document.getElementById('search-input');
   var searchclick = document.querySelector('.fa-search');
-  fetch('../data/produkts.json').then(function (response) {
+  fetch("https://hifi-corner.herokuapp.com/api/v1/products", {
+    "method": "GET"
+  }).then(function (response) {
     return response.json();
   }).then(function (data) {
     //console.log(data);
     searchclick.addEventListener("click", function (event) {
-      var results = data.produkter.filter(function (produkt) {
-        return produkt.title.toLowerCase().includes(search.value.toLowerCase());
+      var results = data.filter(function (produkt) {
+        return produkt.make.toLowerCase().includes(search.value.toLowerCase());
       });
 
       if (results) {
@@ -19,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         results.forEach(function (element) {
           //console.log(element.id)
-          var selected = document.getElementById('p' + element.id);
+          var selected = document.getElementById('p' + element.sku);
           selected.style.display = 'block';
         });
         window.setInterval(function () {
