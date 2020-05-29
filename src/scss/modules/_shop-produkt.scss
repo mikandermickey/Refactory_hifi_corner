@@ -1,0 +1,281 @@
+.wrapper-shop-produkt {
+    width: 85%;
+    background: black;
+    background: white;
+    margin: auto;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+}
+
+.hero-reklame {
+    height: 175px;
+    width: 100%;
+    background: white;
+    margin: auto;
+    padding-bottom: 0.8em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.hero-reklame__billede {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-kontakt {
+    background: black;
+    height: 30px;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    text-align: center;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--hovedfarvebrun);
+    justify-content: center;
+    background: black;
+}
+
+.shop-produkt {
+    display: grid;
+    width: 100%;
+    height: calc( 100% - 175px - 30px - 1.5em - 0.8em - 2em);
+    /* grid-template-rows:  repeat(5, auto); */
+    grid-template-rows: auto auto auto auto auto;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 0.8fr 0.9fr;
+    grid-template-areas:
+     "billede info" 
+     "billede farver" 
+     "billede betaling" 
+     "thumbnail additional" 
+     "specifikation .";
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.shop-produkt__billede {
+    grid-area: billede;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid rgba(128, 128, 128, 0.178);
+}
+
+.shop-produkt__thumbnail {
+    grid-area: thumbnail;
+}
+
+.thumbnail__views {
+    color: var(--hovedfarvebrun);
+    padding-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.thumbnail__small-pictures {
+    max-width: 15%;
+    max-height: 15%;
+}
+
+.shop-produkt__specifikation {
+    grid-area: specifikation;
+}
+
+.specifikation__overskrift {
+    text-transform: uppercase;
+    color: var(--hovedfarvebrun);
+}
+
+.specifikation__td {
+    padding-left: 4em;
+}
+
+.shop-produkt__info {
+    grid-area: info;
+    padding-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+.info__overskrift {
+    color: var(--hovedfarvebrun);
+    margin: 0;
+}
+.info__otherProducts_navn {
+    color: var(--hovedfarvebrun);
+    font-weight: 600;
+}
+.info__otherProducts {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5em;
+}
+.info__otherProducts_discount {
+    color: var(--hovedfarvebrun);
+    padding-right: 1em;
+    font-size: 18px;
+    
+}
+.info__otherProducts_price {
+    text-decoration: line-through;
+    color: var(--hovedfarvebrun);
+    color: rgba(128, 128, 128, 0.63);
+    padding-right: 1em;
+    
+}
+.info__produktTekst {
+    padding-bottom: 1.5em;
+    font-size: 15.5px;
+    line-height: 1.5em;
+}
+.info__buttons-box {
+    display: flex;
+    justify-content: space-around;
+    max-width: 580px;
+    margin-right: 1.5em;
+}
+.buttons-box__button {
+    background: var(--hovedfarvebrun);
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 1em;
+    line-height: 5px;
+    cursor: pointer;
+}
+
+.shop-produkt__farver {
+    grid-area: farver;
+    border: 2px solid rgba(128, 128, 128, 0.199);
+    padding-right: 1.3em;
+    padding-left: 1.5em;
+    margin-left: 1.65em;
+    padding-bottom: 1.5em;
+    height: 150px;
+    /* border-bottom: none; */
+}
+.farver__tekstBox {
+    display: flex;
+    justify-content: space-between;
+}
+.tekstBox__venstre {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--hovedfarvebrun);
+}
+.tekstBox__venstre_rød {
+    color: red;
+}
+.tekstBox__højre {
+    color: rgb(228, 0, 0);
+    font-size: 13px;
+}
+.farver__vaelg {
+    background: #E1E1E1; 
+    width: 35%;
+    padding: 0.4em;
+    margin: -5px;
+    margin-left: 0.1em;
+}
+.farver__vaelg_Knap {
+    font-size: 15px;
+    padding-left: 0.4em;
+}
+
+.shop-produkt__betaling {
+    grid-area: betaling;
+    border: 2px solid rgba(128, 128, 128, 0.089);
+    margin-left: 1.65em;
+    background: rgba(128, 128, 128, 0.199);
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-right: 1em;
+}
+.betaling__box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 350px;
+}
+.betaling__box__button {
+    background: var(--hovedfarvebrun);
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    height: 53px;
+    width: 210px;
+    text-align: center;
+    margin: 0;
+}
+.betaling__box__antal{
+    height: 52px;
+    width: 55px;
+    font-size: 25px;
+    text-align: center;
+}
+.betaling__box__qty {
+    color: var(--hovedfarvebrun);
+    font-size: 1.2em;
+    font-weight: 700;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.betaling__box__OR {
+    color: var(--hovedfarvebrun);
+    font-size: 1.2em;
+    margin-left: 11em;
+    margin-top: 10px;
+}
+.betaling__box__checkout {
+    width: 180px;
+    border-radius: 25px;
+    margin-left: 8.5em;
+    box-shadow: rgba(0, 0, 0, 0.171) 0px 0px 1px 1px;
+}
+.betaling__box__bottomline {
+    width: 95%;
+    height: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.199);
+    margin: auto;
+    margin-bottom: 2.5em;
+}
+
+.shop-produkt__additional {
+    grid-area: additional;
+    margin-left: 1.65em;
+    margin-right: 2.5em;
+}
+.additional__overskrift {
+    color: var(--hovedfarvebrun);
+    font-size: 1.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.additional__info {
+    text-transform: uppercase;
+    font-weight: bold;
+    background: rgba(128, 128, 128, 0.199);
+    padding-left: 0.5em;
+    border: 1px solid rgba(128, 128, 128, 0.399);
+    width: 230px;
+}
+.additional__tekst {
+    padding: 0.9em;
+    border: 1px solid rgba(128, 128, 128, 0.399);
+    width: 700px;
+}
+.additional__tekst_aktiv {
+    color: var(--hovedfarvebrun);
+}
+.additional__table {
+    border-collapse: collapse;
+}
+
+
+.breadcrumbs_less-margin {
+    margin-bottom: 1.3em;
+}

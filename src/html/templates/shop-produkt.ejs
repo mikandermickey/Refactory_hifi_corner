@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>HIFI-Shop-Produkt</title>
-</head>
+<%- include("../partials/before-header.ejs") %>
 
 <body>
 
@@ -15,7 +6,7 @@
 
         <div class="head_left">
             <div class="head-logo">
-                <img class="head-logo_img" src="/images/hi_fi_logo.png" alt="">
+                <img class="head-logo_img" src="assets/images/hi_fi_logo.png" alt="">
             </div>
         </div>
 
@@ -44,17 +35,7 @@
 
     </header>
 
-    <nav class="navigation">
-        <ul class="navigation__linkbox">
-            <li class="linkbox__link"> <a class="linkbox__link_a" href="/index.html">HOME</a> </li>
-            <li class="linkbox__link"> <a class="linkbox__link_a" href="#">ABOUT US</a> </li>
-            <li class="linkbox__link"> <a class="linkbox__link_a" href="/brands.html">BRANDS</a> </li>
-            <li class="linkbox__link"> <a class="linkbox__link_a" href="#">BLOG</a> </li>
-            <li class="linkbox__link"> <a class="linkbox__link_a" href="#">EVENTS</a> </li>
-            <li class="linkbox__link"> <a class="linkbox__link_a active" href="/shop.html">SHOP</a> </li>
-            <li class="linkbox__link"> <a class="linkbox__link_a" href="#">CONTACT US</a> </li>
-        </ul>
-    </nav>
+    <%- include("../partials/navigation.ejs") %>
 
     <main class="wrapper-shop-produkt">
 
@@ -66,22 +47,20 @@
             <a class="breadcrumbs__current_category">Marantz PM6006 UK Edition</a>
         </div>
 
-        <div class="hero-reklame"><img class="hero-reklame__billede" src="/images/banner reklame hifi.png" alt=""></div>
+        <div class="hero-reklame"><img class="hero-reklame__billede" src="assets/images/banner reklame hifi.png" alt="">
+        </div>
 
         <!-- shop-produkt er mit grid -->
         <article class="shop-produkt">
 
             <section class="shop-produkt__billede">
-                <!-- <img src="/images/Produktbilleder/parasound_halop3.jpg" alt=""> -->
+
             </section>
 
             <section class="shop-produkt__thumbnail">
                 <h2 class="thumbnail__views">more views
                 </h2>
-                <!-- <img class="thumbnail__small-pictures"
-                    src="/images/Produktbilleder/parasound_classic7100.jpg" alt="">
-                <img class="thumbnail__small-pictures"
-                    src="/images/Produktbilleder/parasound_halop3.jpg" alt=""> -->
+
             </section>
 
             <section class="shop-produkt__specifikation">
@@ -202,7 +181,7 @@
                     <p class="betaling__box__button">add to cart</p>
                 </div>
                 <p class="betaling__box__OR">-OR-</p>
-                <img class="betaling__box__checkout" src="/images/paypal-checkout.png" alt="">
+                <img class="betaling__box__checkout" src="assets/images/paypal-checkout.png" alt="">
                 <div class="betaling__box__bottomline"></div>
             </section>
 
@@ -249,37 +228,6 @@
 
     </main>
 
-    <footer class="footer">
-        <div class="footer__venstre">
-            <div class="venstre__tekst">
-                <p class="tekst__p">HI-FI Corner</p>
-                <p class="tekst__p">Edinburgh 2 joppa Road EH 15 2EU
-                </p>
-                <p class="tekst__p">Falkirk 44 Cow Wynd FK1 1PU</p>
-            </div>
-            <div class="venstre__links">
-                <a class="links__refund" href="#">Return & Refunds</a>
-            </div>
-        </div>
-        <div class="footer__hojre">
-            <img class="hojre__betaling" src="/images/footer/betalings-muligheder.png" alt="">
-
-            <div class="circle">
-                <i class="fab fa-facebook-f social__link"></i>
-            </div>
-            <div class="circle">
-                <i class="fab fa-youtube social__link"></i>
-            </div>
-            <div class="circle">
-                <i class="fab fa-twitter social__link"></i>
-            </div>
-            <div class="circle">
-                <i class="fab fa-instagram social__link"></i>
-            </div>
-        </div>
-    </footer>
-
-    <script src="/script/shopProdukt-js.js"></script>
-</body>
-
-</html>
+    <%- include("../partials/footer.ejs") %>
+    <script src="/assets/js/shopProdukt-js.js"></script>
+    <%- include("../partials/after-footer.ejs") %>
